@@ -1,0 +1,37 @@
+{
+  "criteria": {
+    "get_hunger_cookie": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bslfw:heart_of_hunger"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancement.heart_of_hunger.desc"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "bslfw:heart_of_hunger"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.heart_of_hunger.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_hunger_cookie"
+    ]
+  ]
+}

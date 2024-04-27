@@ -3,16 +3,17 @@
 	"id": "bslfw",
 	"version": "${version}",
 	"name": "BsLFW",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This mod aims to limit the hunger to go lower than 6.",
 	"authors": [
-		"Me!"
+		"Banduty"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/bandutys-lfw",
+		"sources": "https://github.com/B4nduty/bslfw-1.20.4",
+		"issues": "https://discord.gg/Tx24vBa8ez"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/bslfw/icon.png",
+	"license": "All Rights Reserved",
+	"icon": "assets/bslfw/limit_food_waste.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -20,6 +21,9 @@
 		],
 		"fabric-datagen": [
 			"banduty.bslfw.BsLFWDataGenerator"
+		],
+		"modmenu": [
+			"banduty.bslfw.compat.ModMenuIntegration"
 		]
 	},
 	"mixins": [
@@ -29,6 +33,7 @@
 		"fabricloader": ">=0.15.10",
 		"minecraft": "~1.19.4",
 		"java": ">=17",
+		"cloth-config": ">=10.1.117-fabric",
 		"fabric-api": "*"
 	},
 	"suggests": {
